@@ -162,8 +162,12 @@ h6 {
 .header .profile-img img {
   margin: 15px auto;
   display: block;
-  width: 120px;
-  border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  /* Shift crop upward on the source image so the full head sits lower in the circle */
+  object-position: center 28%;
+  border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .header .logo {
